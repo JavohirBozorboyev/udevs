@@ -63,8 +63,6 @@ export const AppNavLinks = [
       },
     ],
   },
-  {
-    name: "Tools",
-    url: "/",
-  },
 ];
+
+

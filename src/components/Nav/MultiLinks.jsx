@@ -46,7 +46,7 @@ const MultiLinks = ({ item }) => {
       </>
     );
   }
-  console.log(item);
+
   return (
     <>
       <div
