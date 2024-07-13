@@ -6,7 +6,7 @@ const AppLayout = () => {
   return (
     <div>
       <AppNavigation />
-      <div className="bg-gray-100 min-h-screen">
+      <div>
         <Outlet />
       </div>
       <AppFooter />

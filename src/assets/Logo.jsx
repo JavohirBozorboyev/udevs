@@ -1,9 +1,10 @@
-const Logo = () => {
+/* eslint-disable react/prop-types */
+const Logo = ({ width = 100, className }) => {
   return (
     <div>
       <svg
-        width="100"
-        height="56"
+        className={className}
+        width={width}
         viewBox="0 0 168 56"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

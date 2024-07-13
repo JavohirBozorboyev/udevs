@@ -8,8 +8,8 @@ const AppNavigation = () => {
   const [menu, setMenu] = useState(false);
   return (
     <>
-      <div className="fixed z-50 bg-white w-full py-2">
-        <div className="container px-2 mx-auto flex justify-between items-center max-w-6xl">
+      <div className="fixed z-50 bg-white w-full py-4 lg:py-3 border-b">
+        <div className="container px-4 lg:px-2 mx-auto flex justify-between items-center max-w-6xl">
           <div className="flex justify-between items-center w-full lg:w-auto">
             <Logo />
             <svg
@@ -30,8 +30,8 @@ const AppNavigation = () => {
           </div>
           <div className=" hidden lg:flex items-center gap-4 ">
             {/* other nav links */}
-            {AppNavLinks.map((item) => {
-              return <MultiLinks key={item.url} item={item} />;
+            {AppNavLinks.map((item, i) => {
+              return <MultiLinks key={i} item={item} />;
             })}
             {/* other nav links */}
 
@@ -96,7 +96,7 @@ const AppNavigation = () => {
         </div>
       </div>
       <div
-        className={`fixed z-50 right-0 w-full bg-blue-50 h-screen px-2 py-2 lg:hidden flex flex-col justify-between ${
+        className={`fixed z-50 right-0 w-full bg-blue-50 h-screen px-4 py-4 lg:hidden flex flex-col justify-between ${
           menu ? "left-0" : "-left-[100%]"
         }`}
       >

@@ -5,7 +5,7 @@ const MultiLinks = ({ item }) => {
       <>
         <div
           key={item.url}
-          className=" p-2 py-3 hover:border-b-2 border-blue-500 cursor-pointer flex items-center relative linkItem"
+          className=" p-2 py-3 border-b-2 border-white hover:border-blue-500 cursor-pointer flex items-center relative linkItem"
         >
           <p className="font-[500] text-gray-800 text-sm ">{item.name}</p>
           <p>
@@ -24,10 +24,10 @@ const MultiLinks = ({ item }) => {
 
           <div className="bg-white hidden absolute top-10 -left-[70%] grid grid-cols-1 w-[280px] pb-8 rounded-lg  shadow hoverLinkGroup ">
             <p className="p-4 text-sm">{item.name}</p>
-            {item.sublink.map((item) => {
+            {item.sublink.map((item, i) => {
               return (
                 <div
-                  key={item.url}
+                  key={i}
                   className="hover:bg-blue-500 hover:text-white duration-200 p-3 px-4 grid grid-cols-12 items-center "
                 >
                   <div className="col-span-3">
@@ -51,7 +51,7 @@ const MultiLinks = ({ item }) => {
     <>
       <div
         key={item.url}
-        className=" p-2 py-3 hover:border-b-2 border-blue-500 cursor-pointer relative"
+        className=" p-2 py-3 border-b-2 border-white hover:border-blue-500 cursor-pointer relative"
       >
         <p className="font-[500] text-gray-800 text-sm">{item.name}</p>
       </div>
