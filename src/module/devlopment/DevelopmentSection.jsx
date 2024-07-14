@@ -35,7 +35,7 @@ const DevelopmentSection = () => {
                         dangerouslySetInnerHTML={{ __html: item.icon }}
                       ></svg>
                     </div>
-                    <h1 className="text-xs sm:text-sm md:text-lg  font-semibold text-zinc-800 lg:text-xl">
+                    <h1 className="text-xs sm:text-sm md:text-lg  font-semibold text-zinc-800 ">
                       {item.title}
                     </h1>
                   </div>
