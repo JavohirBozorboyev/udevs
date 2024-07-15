@@ -1,3 +1,4 @@
+import BrandListSection from "../../module/Clients/BrandListSection";
 import ConsultingSection from "../../module/devlopment/ConsultingSection";
 import DevelopmentSection from "../../module/devlopment/DevelopmentSection";
 import InfrastructureSection from "../../module/devlopment/InfrastructureSection";
@@ -20,6 +21,7 @@ const HomePage = () => {
       <InfrastructureSection />
       <ConsultingSection />
       <ToolsSection />
+      <BrandListSection />
     </div>
   );
 };
