@@ -17,6 +17,10 @@ export default {
           to: { transform: "translateY(calc(-100% - var(--gap)))" },
         },
       },
+      lineHeight: {
+        "extra-loose": "2.5",
+        10: "3rem",
+      },
     },
   },
   plugins: [],

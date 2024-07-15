@@ -5,13 +5,17 @@ import InfrastructureSection from "../../module/devlopment/InfrastructureSection
 import ServiseERPSection from "../../module/devlopment/ServiseERPSection";
 import UxSection from "../../module/devlopment/UxSection";
 import Header from "../../module/herader/Header";
+import DeleverSection from "../../module/Portfolio/DeleverSection";
+import GoodzoneSection from "../../module/Portfolio/GoodzoneSection";
+import ImanSection from "../../module/Portfolio/ImanSection";
+import SmsSection from "../../module/Portfolio/SmsSection";
 import ServiseList from "../../module/service/ServiseList";
 import TeamSection from "../../module/team/TeamSection";
 import ToolsSection from "../../module/tools/ToolsSection";
 
 const HomePage = () => {
   return (
-    <div>
+    <main>
       <Header />
       <ServiseList />
       <TeamSection />
@@ -22,7 +26,11 @@ const HomePage = () => {
       <ConsultingSection />
       <ToolsSection />
       <BrandListSection />
-    </div>
+      <DeleverSection />
+      <SmsSection />
+      <GoodzoneSection />
+      <ImanSection />
+    </main>
   );
 };
 
