@@ -1,17 +1,26 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 
-const ToolsButtons = () => {
+const ToolsButtons = ({ setFilter, filter }) => {
   const [active, setActive] = useState({ value: false, i: null });
 
   function ActiveCricle(value, i) {
     if (active.value) {
       if (i == active.i) {
         setActive({ value: false, i: null });
+        setFilter(value.value);
+        if (filter == null) {
+          setFilter(value.value);
+        } else {
+          setFilter(null);
+        }
       } else {
         setActive({ value: true, i: i });
+        setFilter(value.value);
       }
     } else {
       setActive({ value: true, i: i });
+      setFilter(value.value);
     }
   }
   return (
@@ -56,7 +65,7 @@ const TypeCard = [
   },
   {
     title: "Testing",
-    value: "testing",
+    value: "test",
   },
   {
     title: "UX/UI",
@@ -64,7 +73,7 @@ const TypeCard = [
   },
   {
     title: "Infrastructure",
-    value: "infrastructure",
+    value: "inf",
   },
   {
     title: "Mobile",
