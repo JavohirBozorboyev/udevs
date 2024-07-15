@@ -1,4 +1,4 @@
-import MobileImg from "../../assets/smsuz_app.png";
+import MobileImg from "../../assets/imanApp.png";
 import { IconBuildingBank, IconMail } from "@tabler/icons-react";
 
 const ImanSection = () => {
@@ -119,7 +119,7 @@ const ImanSection = () => {
               <IconBuildingBank />
               Finance
             </span>
-            <p className=" lg:text-xl text-7xl leading-10">
+            <p className=" lg:text-xl  leading-10">
               Iman - It is a mutual financing platform based on the principles
               of Islamic Finance. Buyers, sellers and investors meet here.
             </p>
@@ -157,7 +157,7 @@ const ImanSection = () => {
               <IconMail />
               Delivery
             </span>
-            <img src={MobileImg} alt="" className="w-full rounded-3xl" />
+            <img src={MobileImg} alt="" className="w-full h-full object-cover rounded-3xl" />
           </div>
         </div>
       </div>

@@ -5,6 +5,8 @@ import InfrastructureSection from "../../module/devlopment/InfrastructureSection
 import ServiseERPSection from "../../module/devlopment/ServiseERPSection";
 import UxSection from "../../module/devlopment/UxSection";
 import Header from "../../module/herader/Header";
+import Contact from "../../module/other/Contact";
+import WorkSection from "../../module/other/WorkSection";
 import DeleverSection from "../../module/Portfolio/DeleverSection";
 import GoodzoneSection from "../../module/Portfolio/GoodzoneSection";
 import ImanSection from "../../module/Portfolio/ImanSection";
@@ -30,6 +32,8 @@ const HomePage = () => {
       <SmsSection />
       <GoodzoneSection />
       <ImanSection />
+      <WorkSection />
+      <Contact />
     </main>
   );
 };
