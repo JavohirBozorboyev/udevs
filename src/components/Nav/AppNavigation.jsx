@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Logo from "../../assets/Logo";
 import { AppNavLinks } from "../../data/AppNavLink";
 import MultiLinks from "./MultiLinks";
@@ -6,14 +5,19 @@ import { useState } from "react";
 
 const AppNavigation = () => {
   const [menu, setMenu] = useState(false);
+  const OpenNav = () => {
+    setMenu(!menu);
+  };
   return (
     <>
       <div className="fixed z-50 bg-white w-full py-4 lg:py-3 border-b">
         <div className="container px-4 lg:px-2 mx-auto flex justify-between items-center max-w-6xl">
           <div className="flex justify-between items-center w-full lg:w-auto">
-            <Logo />
+            <a href="#">
+              <Logo />
+            </a>
             <svg
-              onClick={() => setMenu(!menu)}
+              onClick={OpenNav}
               className="w-8 h-8 fill-blue-600 lg:hidden"
               clipRule="evenodd"
               fillRule="evenodd"
@@ -84,12 +88,12 @@ const AppNavigation = () => {
             {/* language hover select */}
             {/* contact button */}
             <div>
-              <Link
-                to={"#test"}
+              <a
+                href="#contact"
                 className="bg-blue-600 p-2 block px-6 rounded-md text-white hover:scale-105 duration-300 ml-2 "
               >
                 Contact
-              </Link>
+              </a>
             </div>
             {/* contact button */}
           </div>
@@ -101,10 +105,13 @@ const AppNavigation = () => {
         }`}
       >
         <div className="flex items-center justify-between gap-5 ">
-          <Logo />
+          <a href="#" onClick={OpenNav}>
+            <Logo />
+          </a>
+
           <div>
             <svg
-              onClick={() => setMenu(!menu)}
+              onClick={OpenNav}
               className="w-6 h-6 active:scale-95"
               clipRule="evenodd"
               fillRule="evenodd"
@@ -118,24 +125,25 @@ const AppNavigation = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 gap-5 text-center">
-          <Link to={"/#"} className="text-3xl">
+          <a onClick={OpenNav} href="#devlopment" className="text-3xl">
             Servise
-          </Link>
-          <Link to={"/#"} className="text-3xl">
+          </a>
+          <a onClick={OpenNav} href={"#clients"} className="text-3xl">
             Client
-          </Link>
-          <Link to={"/#"} className="text-3xl">
+          </a>
+          <a onClick={OpenNav} href={"#team"} className="text-3xl">
             Command
-          </Link>
+          </a>
         </div>
         {/* contact button */}
         <div>
-          <Link
-            to={"#test"}
+          <a
+            onClick={OpenNav}
+            href="#contact"
             className="bg-blue-600 p-4 text-xl block px-6 rounded-md text-white hover:scale-105 duration-300 text-center "
           >
             Contact
-          </Link>
+          </a>
           <div className="mt-10 mb-6 flex justify-center items-center gap-5">
             <a href="#">
               <svg

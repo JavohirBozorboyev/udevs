@@ -3,9 +3,9 @@ import TeamIcon from "../../assets/teamIcon.svg";
 
 const TeamSection = () => {
   return (
-    <div className="bg-blue-50">
+    <div className="bg-blue-50" id="team">
       <div className="container max-w-6xl mx-auto px-4 lg:px-2 py-20">
-        <SectionTitle title="Team" className={''} />
+        <SectionTitle title="Team" className={""} />
         <div className="flex flex-col-reverse gap-10 lg:gap-5 md:flex-row items-center justify-between mt-12 lg:mt-12">
           <div className="flex flex-col gap-5 w-full lg:w-1/2">
             <p className="text-zinc-800 text-lg lg:text-xl  ">

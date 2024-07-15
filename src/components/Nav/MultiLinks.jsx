@@ -26,8 +26,9 @@ const MultiLinks = ({ item }) => {
             <p className="p-4 text-sm">{item.name}</p>
             {item.sublink.map((item, i) => {
               return (
-                <div
+                <a
                   key={i}
+                  href={`${item.url}`}
                   className="hover:bg-blue-500 hover:text-white duration-200 p-3 px-4 grid grid-cols-12 items-center "
                 >
                   <div className="col-span-3">
@@ -38,7 +39,7 @@ const MultiLinks = ({ item }) => {
                   <div className="col-span-9">
                     <p className="text-xs">{item.name}</p>
                   </div>
-                </div>
+                </a>
               );
             })}
           </div>
@@ -49,12 +50,13 @@ const MultiLinks = ({ item }) => {
 
   return (
     <>
-      <div
+      <a
         key={item.url}
+        href={`${item.url}`}
         className=" p-2 py-3 border-b-2 border-white hover:border-blue-500 cursor-pointer relative"
       >
         <p className="font-[500] text-gray-800 text-sm">{item.name}</p>
-      </div>
+      </a>
     </>
   );
 };

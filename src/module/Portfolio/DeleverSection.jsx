@@ -3,7 +3,7 @@ import MobileImg from "../../assets/delever_app.png";
 import { IconTruckDelivery } from "@tabler/icons-react";
 const DeleverSection = () => {
   return (
-    <div className="mt-16">
+    <div id="delever" className="mt-16">
       <div className="container mx-auto px-4 lg:px-2 max-w-6xl py-20">
         <div className="flex lg:justify-end">
           <div className=" lg:w-1/2 ">

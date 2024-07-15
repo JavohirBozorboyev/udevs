@@ -12,7 +12,10 @@ import SectionTitle from "./SectionTitle";
 
 const Contact = () => {
   return (
-    <div className="container mx-auto px-4 lg:px-2 max-w-6xl py-20">
+    <div
+      id="contact"
+      className="container mx-auto px-4 lg:px-2 max-w-6xl py-20"
+    >
       <SectionTitle title="Contact us" />
 
       <div className="mt-10 shadow-xl rounded-md p-4 grid grid-cols-2 gap-8 lg:p-6 xl:p-10">

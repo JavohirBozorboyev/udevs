@@ -4,7 +4,7 @@ import MobileImgBg from "../../assets/bg_pattern.png";
 
 const UxSection = () => {
   return (
-    <div>
+    <div id="ux">
       <div className="container mx-auto px-4 lg:px-2 max-w-6xl py-20">
         <SectionTitle title="UI / UX design" className="lg:w-2/3" />
 

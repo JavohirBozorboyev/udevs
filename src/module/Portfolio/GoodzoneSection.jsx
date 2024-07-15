@@ -3,7 +3,7 @@ import GoodzoneLogo from "../../assets/goodzoneLogo.png";
 import { IconBasket } from "@tabler/icons-react";
 const GoodzoneSection = () => {
   return (
-    <div className="">
+    <div id="goodzone" className="">
       <div className="container mx-auto px-4 lg:px-2 max-w-6xl py-10">
         <div className="flex lg:justify-end">
           <div className=" lg:w-1/2 ">

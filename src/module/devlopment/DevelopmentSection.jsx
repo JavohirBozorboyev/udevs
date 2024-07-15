@@ -4,7 +4,7 @@ import MobileImgBg from "../../assets/bg_pattern.png";
 
 const DevelopmentSection = () => {
   return (
-    <div>
+    <div id="devlopment">
       <div className="container mx-auto px-4 lg:px-2 max-w-6xl py-20">
         <SectionTitle
           title="Development of mobile applications"

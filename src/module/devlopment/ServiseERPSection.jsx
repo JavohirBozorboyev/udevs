@@ -3,7 +3,7 @@ import MobileImg from "../../assets/desktop.png";
 import MobileImgBg from "../../assets/bg_pattern.png";
 const ServiseERPSection = () => {
   return (
-    <div className="bg-sky-50 py-20">
+    <div id="erp" className="bg-sky-50 py-20">
       <div className="container mx-auto px-4 lg:px-2 max-w-6xl">
         <SectionTitle title="ERP systems" />{" "}
         <div className="flex  flex-col-reverse lg:flex-row gap-5 lg:gap-10 xl:gap-20 mt-16">

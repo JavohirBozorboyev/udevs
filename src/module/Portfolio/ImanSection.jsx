@@ -3,7 +3,7 @@ import { IconBuildingBank, IconMail } from "@tabler/icons-react";
 
 const ImanSection = () => {
   return (
-    <div>
+    <div id="iman">
       <div className="container mx-auto px-4 lg:px-2 max-w-6xl py-20">
         <div>
           <svg
@@ -157,7 +157,11 @@ const ImanSection = () => {
               <IconMail />
               Delivery
             </span>
-            <img src={MobileImg} alt="" className="w-full h-full object-cover rounded-3xl" />
+            <img
+              src={MobileImg}
+              alt=""
+              className="w-full h-full object-cover rounded-3xl"
+            />
           </div>
         </div>
       </div>

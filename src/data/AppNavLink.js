@@ -1,68 +1,65 @@
 export const AppNavLinks = [
   {
     name: "Direction",
-    url: "/",
+    url: "#dir",
   },
   {
     name: "Command",
-    url: "/",
+    url: "#team",
   },
   {
     name: "Services",
-    url: "/",
+
     sublink: [
       {
         name: "Devlopment of mobile aplications",
-        url: "/",
+        url: "#devlopment",
       },
       {
         name: "Development and implementation ERP systems",
-        url: "/",
+        url: "#erp",
       },
       {
         name: "User interface, User experience design",
-        url: "/",
-      },
-      {
-        name: "IT consulting",
-        url: "/",
+        url: "#ux",
       },
       {
         name: "Optimization IT consulting infrastructure",
-        url: "/",
+        url: "#optimzation",
+      },
+      {
+        name: "IT consulting",
+        url: "#consulting",
       },
     ],
   },
   {
     name: "Tools",
-    url: "/",
+    url: "#tools",
   },
   {
     name: "Clients",
-    url: "/",
+    url: "#clients",
   },
   {
     name: "Portfolio",
-    url: "/",
     sublink: [
       {
         name: "Delever",
-        url: "/",
+        url: "#delever",
       },
       {
         name: "Sms.uz",
-        url: "/",
+        url: "#sms",
       },
       {
         name: "Goodzone",
-        url: "/",
+        url: "#goodzone",
       },
       {
         name: "Iman",
-        url: "/",
+        url: "#iman",
       },
     ],
   },
 ];
-
-

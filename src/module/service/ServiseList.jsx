@@ -4,8 +4,14 @@ import ServiseCard from "./ServiseCard";
 
 const ServiseList = () => {
   return (
-    <div className="container mx-auto px-4 lg:px-2 max-w-6xl pb-24 pt-5">
-      <SectionTitle title="Our services" className={'text-center lg:text-left'} />
+    <div
+      id="dir"
+      className="container mx-auto px-4 lg:px-2 max-w-6xl pb-24 pt-5"
+    >
+      <SectionTitle
+        title="Our services"
+        className={"text-center lg:text-left"}
+      />
 
       <div className="grid grid-cols-12 gap-5 mt-16">
         {servisData.map((item, i) => {

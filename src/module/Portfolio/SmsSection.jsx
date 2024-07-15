@@ -4,7 +4,7 @@ import { IconMail } from "@tabler/icons-react";
 
 const SmsSection = () => {
   return (
-    <div>
+    <div id="sms">
       <div className="container mx-auto px-4 lg:px-2 max-w-6xl py-20">
         <SectionTitle title="Smsuz.uz" className={"font-extrabold"} />
 

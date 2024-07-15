@@ -3,7 +3,7 @@ import MobileImg from "../../assets/desktop.png";
 import MobileImgBg from "../../assets/bg_pattern.png";
 const InfrastructureSection = () => {
   return (
-    <div className="bg-sky-50 py-20">
+    <div id="optimzation" className="bg-sky-50 py-20">
       <div className="container mx-auto px-4 lg:px-2 max-w-6xl">
         <SectionTitle
           title="Optimization Infrastructure"
