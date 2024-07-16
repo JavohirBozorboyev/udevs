@@ -1,17 +1,21 @@
 import { Link } from "react-router-dom";
 import Logo from "../../assets/Logo";
+import TypingAnimation from "../../components/Typing/TypingAnimation";
 
 const Header = () => {
   return (
     <div className="container px-4 lg:px-2 mx-auto max-w-6xl py-24 xl:py-32 min-h-[80vh]  flex flex-col items-center justify-center lg:flex-row lg:justify-between gap-10 lg:gap-5">
       <div className="flex flex-col gap-10 items-center lg:items-start">
-        <Logo width={250} className={"w-40 lg:w-60"} />
+        <Logo width={250} className={"w-40 lg:w-60 xl:w-72"} />
         <h2 className="text-4xl text-gray-700 font-semibold text-center lg:text-left">
           IT-Outsourcing Company
         </h2>
-        <h1 className="text-4xl text-blue-600 font-semibold text-center lg:text-left">
-          Devolopment of mobile aplication
-        </h1>
+        <TypingAnimation
+          text={"Devolopment of mobile aplication"}
+          className={
+            "text-4xl text-blue-600 font-semibold text-center lg:text-left"
+          }
+        />
         <Link
           to={"/"}
           className="text-xl p-3 px-10 min-w-60 text-center bg-blue-600 text-white hidden lg:inline-block rounded-lg hover:scale-105 duration-200"

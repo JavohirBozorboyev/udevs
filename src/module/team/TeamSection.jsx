@@ -1,5 +1,6 @@
 import SectionTitle from "../other/SectionTitle";
 import TeamIcon from "../../assets/teamIcon.svg";
+import NumberTicker from "../../components/MagicUi/NumberTicker";
 
 const TeamSection = () => {
   return (
@@ -14,9 +15,15 @@ const TeamSection = () => {
               and front-end developers.
             </p>
             <div>
-              <h1 className="text-7xl xl:text-9xl text-blue-600 font-semibold ">
-                100+
-              </h1>
+              <article className="text-blue-600 text-7xl xl:text-9xl  font-semibold">
+                <NumberTicker
+                  value={100}
+                  className={
+                    " text-7xl xl:text-9xl text-blue-600 font-semibold"
+                  }
+                />
+                +
+              </article>
               <h2 className="text-2xl lg:text-4xl mt-5 text-zinc-800 font-semibold ">
                 Dedicated team
               </h2>
